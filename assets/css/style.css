@@ -1,0 +1,29 @@
+*{
+	margin: 0
+	padding:0;
+	box-sizing: border-box;
+
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+footer p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.icon{
+	width: 250px;
+	height: 150px;
+	margin: 0 auto;
+}
+.jumbotron{
+	height: 100%;
+	width: 100%;
+}
