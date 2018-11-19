@@ -26,4 +26,18 @@ footer p{
 .jumbotron{
 	height: 100%;
 	width: 100%;
+	background-color: transparent;
+}
+
+.navbar{
+	margin: 0 auto;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: black;
+}
+.nav-link:hover{
+	color: black;
+}
+button .toggle{
+	color: black;
 }
