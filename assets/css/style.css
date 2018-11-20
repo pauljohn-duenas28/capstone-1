@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 
 }
+
+/*home page*/
+.section-main,
+.header-main{
+	background-color: transparent;
+}
 footer{
     position: fixed;
     left: 0;
@@ -14,9 +20,15 @@ footer{
     text-align: center;
 
 }
-footer p{
+.active{
+	color: black;
+}
+footer p,small{
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+footer small{
+	font-size: 0.7em;
 }
 .icon{
 	width: 250px;
@@ -26,7 +38,8 @@ footer p{
 .jumbotron{
 	height: 100%;
 	width: 100%;
-	background-color: transparent;
+	background-color: rgba(211,211,211,0.5);
+
 }
 
 .navbar{
@@ -39,5 +52,97 @@ footer p{
 	color: black;
 }
 button .toggle{
-	color: black;
+	color: black !important;
 }
+.navbar-toggler-icon{
+	color: black !important;
+}
+.home-container{
+	background-image: url("../images/ragnarok-bg.jpg");
+	
+/*	background-position: center;*/
+	background-size: cover;
+	height: 100vh;
+	/*overflow: hidden;*/
+	background-position: center;
+	/*background-attachment: fixed;*/
+	/*background-repeat: no-repeat;*/
+/*	background-attachment: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	min-width: 1024px;*/
+}
+.poring{
+	width: 50px;
+	height: 50px;
+}
+
+/*end of homepage*/
+
+/*start of job-build-guide*/
+
+.carousel{
+	margin: 0 auto;
+	border-radius: 25px;
+
+	
+
+}
+.carousel-inner{
+	border-radius: 25px;
+
+}
+
+.kafra{
+	height: 400px;
+}
+.resp-container{
+	position: relative;
+	overflow: hidden;
+	padding-top: 25px;
+	/*padding-top: 56.25%;*/
+}
+
+
+
+/*end of job-build-guide*/
+
+/*phone*/
+@media only screen and (max-width: 400px){
+	.kafra{
+		visibility: hidden;
+		display: none;
+	}
+	footer p,small{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}
+	footer small{
+		font-size: 0.5em;
+	}
+	.jumbotron{
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(211,211,211,0.5);
+	margin-bottom: 200px;
+
+	}
+
+.home-container{
+	background-image: url("../images/ragnarok-bg.jpg");
+	height: 100vh;
+	background-size: cover;
+}
+
+}
+@media only screen and (min-width: 401px) and (max-width: 960px){
+	.kafra{
+		visibility: hidden;
+		display: none;
+	}
+}
+/*tablet*/
+
