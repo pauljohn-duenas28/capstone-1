@@ -3,6 +3,8 @@
 	padding:0;
 	box-sizing: border-box;
 
+	font-family:"TrueType", arial;
+
 }
 
 /*home page*/
@@ -10,25 +12,43 @@
 .header-main{
 	background-color: transparent;
 }
+#job-class{
+	border-top: 6px solid #D4AF37;
+}
+#column2{
+	border-top: 6px solid #40A4F4;	/*40A4F4 cedcff*/
+}
+#column3{
+	border-top: 6px solid #001a33;	
+}
+.nav-item:hover{
+	border-bottom: 2px solid #0077be;
+}
 
 @font-face {
-font-family: "TrueType";
-font-family: "Allembert"
-src: url(css/fonts/ufonts.com_allembert.ttf);
-src: url(css/fonts/ufonts.com_allembert.eot);
+font-family: TrueType;
+src: url(../fonts/ufonts.com_allembert.ttf);
+
 }
 h2{
-	font-family:Allembert;
+	font-family:"TrueType", arial;
+	font-weight: 700;
+}
+.navbar-nav{
+	font-weight: 700;
 }
 .spy-scroll{
 	height: 250px;
 	position: relative;
 	overflow-y: scroll;
 }
+[class*="spy"] p{
+	font-family: 'Abel', sans-serif;
+}
 footer{
-    position: fixed;
+   /* position: fixed;*/
     left: 0;
-    bottom: 0;
+   /* bottom: 0;*/
     width: 100%;
     background-color: black;
     color: white;

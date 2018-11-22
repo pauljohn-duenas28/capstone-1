@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 	<meta http="X-UA-Compatible" content="IE=Edge">
 
-
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -32,7 +33,7 @@
 
 		<header class="header-main-2 animated fadeInDown">
 		
-			<nav class="navbar navbar-expand-lg">
+			<nav class="navbar navbar-expand-lg navbar-light">
 				<a class="navbar-brand" href="ragnarok-mobile-beginners-guide.html"><img class="icon" src="assets/images/logo.png"><!-- <img class="poring" src="assets/images/ro-poring.gif"> --></a>
 				
 
@@ -75,7 +76,7 @@
 
 			</nav> <!-- end of navbar nav -->
 
-			<hr>
+			
 		</header> <!-- end of header-main -->
 
 		<section class="section-guide text-center">
@@ -84,9 +85,9 @@
 						
 						<div class="col-lg-2">
 
-							<nav class="nav flex-column card">
+							<nav id="job-class" class="nav flex-column card sticky-top">
 
-								<h2 class="card shadow-lg">Job Classes</h2>
+								<h2 class="shadow-lg py-3">Job Classes</h2>
 
 							 	<a class="nav-link" href="#hunter">Sniper</a>
 							 	<a class="nav-link" href="#">Rouge</a>
@@ -106,37 +107,42 @@
 						
 						<div class="col-lg-6">
 
-							<div class="card container-fluid">
+							<div id="column2" class="card container-fluid mb-4">
 
-								<h2 id="hunter" class="card text-center mt-2 shadow">Hunter/Sniper Class</h2>
+								<h2 id="hunter" class="text-center mt-2 shadow py-3">Hunter/Sniper Class</h2>
 
 								<div class="card mb-5">
+
 								  <img class="card-img-top" src="assets/images/hunter.jpg" alt="Card image cap">
+
 								  <div class="card-body">
-								    <!-- <p class="card-text">One shot, one kill! There is no better way to describe the Sniper. They specialize in precise and powerful ranged attacks. The Sniper is the master of the Bow. In a Sniper’s hands, the bow is a deadly instrument capable of dealing massive damage and carnage..</p> -->
+					
+								    <nav id="navbar-example2" class="navbar navbar-light bg-light">
 
+									  <a class="navbar-brand" href="#">Navbar</a>
 
-								    
-									    <nav id="navbar-example2" class="navbar navbar-light bg-light">
-										  <a class="navbar-brand" href="#">Navbar</a>
-										  <ul class="nav nav-pills">
-										    <li class="nav-item">
-										      <a class="nav-link" href="#overview">Overview</a>
-										    </li>
-										    <li class="nav-item">
-										      <a class="nav-link" href="#mdo">@mdo</a>
-										    </li>
-										    <li class="nav-item dropdown">
-										      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-										      <div class="dropdown-menu">
-										        <a class="dropdown-item" href="#one">one</a>
-										        <a class="dropdown-item" href="#two">two</a>
-										        <div role="separator" class="dropdown-divider"></div>
-										        <a class="dropdown-item" href="#three">three</a>
-										      </div>
-										    </li>
-										  </ul>
-										</nav>
+									  <ul class="nav nav-pills">
+
+									    <li class="nav-item">
+									      <a class="nav-link" href="#overview">Overview</a>
+									    </li>
+
+									    <li class="nav-item">
+									      <a class="nav-link" href="#mdo">@mdo</a>
+									    </li>
+
+									    <li class="nav-item dropdown">
+									      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+
+									      <div class="dropdown-menu">
+									        <a class="dropdown-item" href="#one">one</a>
+									        <a class="dropdown-item" href="#two">two</a>
+									        <div role="separator" class="dropdown-divider"></div>
+									        <a class="dropdown-item" href="#three">three</a>
+									      </div>
+									    </li>
+									  </ul>
+									</nav>
 
 										<div class="spy-scroll text-left" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 										  <h4 id="overview">Overview</h4>
@@ -177,7 +183,7 @@
 
 								</div> <!-- end of card -->
 								
-								<h2 id="assasin" class="card text-center shadow mt-2">Assassin/Assassin Cross Class</h2>
+								<h2 id="assasin" class="text-center shadow mt-2 py-3">Assassin/Assassin Cross Class</h2>
 
 								<div class="card mb-5">
 								  <img class="card-img-top" src="assets/images/assassin.jpg" alt="Card image cap">
@@ -186,7 +192,7 @@
 								  </div> <!-- end of card body -->
 								</div> <!-- end of card -->
 								
-								<h2 id="knight" class="card text-center shadow mt-2">Knight/Lord Knight Class</h2>
+								<h2 id="knight" class="text-center shadow mt-2 py-3">Knight/Lord Knight Class</h2>
 
 								<div class="card mb-5">
 								  <img class="card-img-top" src="assets/images/knight.jpg" alt="Card image cap">
@@ -201,8 +207,8 @@
 						</div> <!-- end of card -->
 					
 						<div class="col-lg-4">
-							<div class="card text-center container-fluid">
-								<h2 class="card shadow mt-2"> Useful Links</h2>
+							<div id="column3" class="card text-center container-fluid">
+								<h2 class="shadow mt-2 py-3"> Useful Links</h2>
 
 									<div class="card embed-responsive embed-responsive-16by9 mb-3">
 
@@ -239,20 +245,23 @@
 			
 
 		</section> <!-- end section -->
+	
+		   
 		
+		</div> <!-- end of container-fluid-->
 
-		<footer class="footer-main">
-			<div class="row">
-				<div class="col-12 col-md-12">
-					<small> images/photo not mine credits to the owner and creators of ragnarok online</small>
-				</div>
-				<div class="col-12 col-md-12">
-					<p>&copy 2018 IGN | SexyChix</p>
-				</div>
+			<footer class="footer-main">
+		<div class="row">
+			<div class="col-12 col-md-12">
+				<small> images/photo not mine credits to the owner and creators of ragnarok online</small>
 			</div>
+			<div class="col-12 col-md-12">
+				<p>&copy 2018 IGN | SexyChix</p>
+			</div>
+		</div>
 		</footer> <!-- end of footer-main -->
 
-	</div> <!-- end of container-fluid-->
+	
 
 
 
