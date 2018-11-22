@@ -33,7 +33,7 @@
 		<header class="header-main-2 animated fadeInDown">
 		
 			<nav class="navbar navbar-expand-lg">
-				<a class="navbar-brand" href="#"><img class="icon" src="assets/images/logo.png"><img class="poring" src="assets/images/ro-poring.gif"></a>
+				<a class="navbar-brand" href="ragnarok-mobile-beginners-guide.html"><img class="icon" src="assets/images/logo.png"><!-- <img class="poring" src="assets/images/ro-poring.gif"> --></a>
 				
 
 			<button class="toggle justify-content-center navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
@@ -84,9 +84,9 @@
 						
 						<div class="col-lg-2">
 
-							<nav class="nav flex-column sticky-top">
+							<nav class="nav flex-column card">
 
-								<h2 class="card">Job Classes</h2>
+								<h2 class="card shadow-lg">Job Classes</h2>
 
 							 	<a class="nav-link" href="#hunter">Sniper</a>
 							 	<a class="nav-link" href="#">Rouge</a>
@@ -97,6 +97,8 @@
 							  	<a class="nav-link" href="#assasin">Assasin</a>
 							  	<a class="nav-link" href="#">Blacksmith</a>
 							  	<a class="nav-link" href="#">Alchemist</a>
+							  	<a class="nav-link disabled" href="#">Bard Soon</a>
+							  	<a class="nav-link disabled" href="#">Dancer Soon</a>
 							</nav> <!-- end nav -->
 
 						</div> <!-- end of column -->
@@ -104,44 +106,139 @@
 						
 						<div class="col-lg-6">
 
-							<h2 id="hunter" class="text-center card">Hunter/Sniper Class</h2>
-							<div class="card">
-							  <img class="card-img-top" src="assets/images/hunter.jpg" alt="Card image cap">
-							  <div class="card-body">
-							    <p class="card-text">One shot, one kill! There is no better way to describe the Sniper. They specialize in precise and powerful ranged attacks. The Sniper is the master of the Bow. In a Sniper’s hands, the bow is a deadly instrument capable of dealing massive damage and carnage..</p>
-							  </div> <!-- end of card body -->
-							</div> <!-- end of card -->
-							
-							<h2 id="assasin" class="text-center card">Assassin/Assassin Cross Class</h2>
-							<div class="card">
-							  <img class="card-img-top" src="assets/images/assassin.jpg" alt="Card image cap">
-							  <div class="card-body">
-							    <p class="card-text">The Assassin Cross utilizes stealth and confusion in order to land the perfect killing blow. The Assassin Cross has a huge repertoire of lethal arts including ultimate mastery of poison-use, better than the original Assassin. With these new skills, the Assassin Cross now has a wide choice of brutal methods to overcome opponents. All without ever leaving the shadows...</p>
-							  </div> <!-- end of card body -->
-							</div> <!-- end of card -->
-							
-							<h2 id="knight" class="text-center card">Knight/Lord Knight Class</h2>
-							<div class="card">
-							  <img class="card-img-top" src="assets/images/knight.jpg" alt="Card image cap">
-							  <div class="card-body">
-							    <p class="card-text">Lord Knights are the Transcendent variants of Knights. The Lord Knight's skills are a good balance of offense and defense. The Lord Knight is now a master of weapons with a special affinity for Two-handed Swords and Spears. A Lord Knight has formidable attack strength and can crush an opponent's defense with ease. Being a Lord Knight, they gain vastly improved offensive capabilities and some defensive capabilities. They easily retain their status as the class with the highest HP Modifier and strongest physical AoE damage dealer.</p>
-							  </div> <!-- end of card body -->
-							</div> <!-- end of card -->
-						</div> <!-- end of col -->	
+							<div class="card container-fluid">
+
+								<h2 id="hunter" class="card text-center mt-2 shadow">Hunter/Sniper Class</h2>
+
+								<div class="card mb-5">
+								  <img class="card-img-top" src="assets/images/hunter.jpg" alt="Card image cap">
+								  <div class="card-body">
+								    <!-- <p class="card-text">One shot, one kill! There is no better way to describe the Sniper. They specialize in precise and powerful ranged attacks. The Sniper is the master of the Bow. In a Sniper’s hands, the bow is a deadly instrument capable of dealing massive damage and carnage..</p> -->
+
+
+								    
+									    <nav id="navbar-example2" class="navbar navbar-light bg-light">
+										  <a class="navbar-brand" href="#">Navbar</a>
+										  <ul class="nav nav-pills">
+										    <li class="nav-item">
+										      <a class="nav-link" href="#overview">Overview</a>
+										    </li>
+										    <li class="nav-item">
+										      <a class="nav-link" href="#mdo">@mdo</a>
+										    </li>
+										    <li class="nav-item dropdown">
+										      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+										      <div class="dropdown-menu">
+										        <a class="dropdown-item" href="#one">one</a>
+										        <a class="dropdown-item" href="#two">two</a>
+										        <div role="separator" class="dropdown-divider"></div>
+										        <a class="dropdown-item" href="#three">three</a>
+										      </div>
+										    </li>
+										  </ul>
+										</nav>
+
+										<div class="spy-scroll text-left" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+										  <h4 id="overview">Overview</h4>
+										  <p>One shot, one kill! There is no better way to describe the Sniper. They specialize in precise and powerful ranged attacks. The Sniper is the master of the Bow. In a Sniper’s hands, the bow is a deadly instrument capable of dealing massive damage and carnage...</p>
+										  <h4 id="mdo">@mdo</h4>
+										  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										  <h4 id="one">one</h4>
+										  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										  <h4 id="two">two</h4>
+										  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										  <h4 id="three">three</h4>
+										  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>
+									
+								    
+
+								  </div> <!-- end of card body -->
+
+								</div> <!-- end of card -->
+								
+								<h2 id="assasin" class="card text-center shadow mt-2">Assassin/Assassin Cross Class</h2>
+
+								<div class="card mb-5">
+								  <img class="card-img-top" src="assets/images/assassin.jpg" alt="Card image cap">
+								  <div class="card-body">
+								    <p class="card-text">The Assassin Cross utilizes stealth and confusion in order to land the perfect killing blow. The Assassin Cross has a huge repertoire of lethal arts including ultimate mastery of poison-use, better than the original Assassin. With these new skills, the Assassin Cross now has a wide choice of brutal methods to overcome opponents. All without ever leaving the shadows...</p>
+								  </div> <!-- end of card body -->
+								</div> <!-- end of card -->
+								
+								<h2 id="knight" class="card text-center shadow mt-2">Knight/Lord Knight Class</h2>
+
+								<div class="card mb-5">
+								  <img class="card-img-top" src="assets/images/knight.jpg" alt="Card image cap">
+								  <div class="card-body">
+								    <p class="card-text">Lord Knights are the Transcendent variants of Knights. The Lord Knight's skills are a good balance of offense and defense. The Lord Knight is now a master of weapons with a special affinity for Two-handed Swords and Spears. A Lord Knight has formidable attack strength and can crush an opponent's defense with ease. Being a Lord Knight, they gain vastly improved offensive capabilities and some defensive capabilities. They easily retain their status as the class with the highest HP Modifier and strongest physical AoE damage dealer.</p>
+								  </div> <!-- end of card body -->
+
+								</div> <!-- end of card -->
+
+							</div> <!-- end of col -->	
+
+						</div> <!-- end of card -->
 					
 						<div class="col-lg-4">
-							<h2> Useful Links</h2>
-							<iframe width="300" height="250" src="https://www.youtube.com/embed/JNFRKBtTpkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<div class="card text-center container-fluid">
+								<h2 class="card shadow mt-2"> Useful Links</h2>
 
-							<iframe width="300" height="250" src="https://www.youtube.com/embed/GipzBgWYDNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<div class="card embed-responsive embed-responsive-16by9 mb-3">
 
-							<iframe width="300" height="250" src="https://www.youtube.com/embed/ZnuS8IfQCtM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									  	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yA9p6cxMQqk" allowfullscreen></iframe>
+
+									</div>
+
+									<div class="card embed-responsive embed-responsive-16by9 mb-3">
+
+		 								 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QDovRO3uJ2E" allowfullscreen></iframe>		 
+
+									</div>
+
+
+									<div class="card embed-responsive embed-responsive-16by9 mb-3">
+
+									  	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZnuS8IfQCtM" allowfullscreen></iframe>
+									
+									</div>
+
+									<div class="card embed-responsive embed-responsive-16by9 mb-3">
+
+									  	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nStZbz1K95Y" allowfullscreen></iframe>
+									
+									</div>
+
+									
+								
+								</div> <!-- end card -->
+
 						</div> <!-- end col -->
 
 				</div> <!-- END ROW -->
 			
 
-		</section>
+		</section> <!-- end section -->
 		
 
 		<footer class="footer-main">

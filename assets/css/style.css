@@ -10,6 +10,21 @@
 .header-main{
 	background-color: transparent;
 }
+
+@font-face {
+font-family: "TrueType";
+font-family: "Allembert"
+src: url(css/fonts/ufonts.com_allembert.ttf);
+src: url(css/fonts/ufonts.com_allembert.eot);
+}
+h2{
+	font-family:Allembert;
+}
+.spy-scroll{
+	height: 250px;
+	position: relative;
+	overflow-y: scroll;
+}
 footer{
     position: fixed;
     left: 0;
@@ -57,12 +72,13 @@ footer small{
 .nav-link:hover{
 	color: black;
 }
-button .toggle{
-	color: black !important;
+/*.toggle{
+	background-color: black !important;
 }
 .navbar-toggler-icon{
-	color: black !important;
-}
+	color: white;
+}*/
+
 .home-container{
 	background-image: url("../images/ragnarok-bg.jpg");
 	background-size: cover;
