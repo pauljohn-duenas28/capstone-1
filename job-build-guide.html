@@ -18,7 +18,10 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 
 	<!-- bootstrap css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -27,9 +30,10 @@
 	<title>Job Build Guide</title>
 
 </head>
+
 <body>
 
-	<div class="home-container container-fluid">
+	<div class="home-container-2 container-fluid">
 
 		<header class="header-main-2 animated fadeInDown">
 		
@@ -102,7 +106,7 @@
 							  	<a class="nav-link disabled" href="#">Dancer Soon</a>
 							</nav> <!-- end nav -->
 
-						</div> <!-- end of column -->
+						</div> <!-- end of column one -->
 						
 						
 						<div class="col-lg-6">
@@ -116,68 +120,124 @@
 								  <img class="card-img-top" src="assets/images/hunter.jpg" alt="Card image cap">
 
 								  <div class="card-body">
-					
-								    <nav id="navbar-example2" class="navbar navbar-light bg-light">
 
-									  <a class="navbar-brand" href="#">Navbar</a>
 
-									  <ul class="nav nav-pills">
+								  	<nav class="navbar navbar-expand-lg navbar-light">
 
-									    <li class="nav-item">
-									      <a class="nav-link" href="#overview">Overview</a>
-									    </li>
+										<button class="toggle justify-content-center navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-example2">
+											<span class="navbar-toggler-icon"></span>
+										</button> <!-- angel's burger -->
+						
+									    <nav id="navbar-example2" class="navbar collapse navbar-collapse justify-content-center">
 
-									    <li class="nav-item">
-									      <a class="nav-link" href="#mdo">@mdo</a>
-									    </li>
+										  <ul class="nav nav-pills nav-guide">
 
-									    <li class="nav-item dropdown">
-									      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+										    <li class="nav-item">
+										      <a class="nav-link" href="#overview-1">Overview</a>
+										    </li>
 
-									      <div class="dropdown-menu">
-									        <a class="dropdown-item" href="#one">one</a>
-									        <a class="dropdown-item" href="#two">two</a>
-									        <div role="separator" class="dropdown-divider"></div>
-									        <a class="dropdown-item" href="#three">three</a>
-									      </div>
-									    </li>
-									  </ul>
-									</nav>
+										    <li class="nav-item">
+										      <a class="nav-link" href="#jobchange-1">Job Change</a>
+										    </li>
 
-										<div class="spy-scroll text-left" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-										  <h4 id="overview">Overview</h4>
+										    <li class="nav-item dropdown">
+										      <a class="nav-guide nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Build</a>
+
+										      <div class="dropdown-menu">
+										        <a class="dropdown-item" href="#one-1">ADL Build</a>
+										        <a class="dropdown-item" href="#two-2">Falcon Build</a>
+										        <div role="separator" class="dropdown-divider"></div>
+										        <a class="dropdown-item" href="#three-3">Trapper Build</a>
+										      </div>
+										    </li>
+										  </ul>
+										</nav> <!-- end of collapse -->
+									</nav><!--  end of navbar-expand -->
+
+									<div class="spy-scroll text-left" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+
+										  <h4 id="overview-1">Overview</h4>
+
+										  <small style="font-size: smaller;">Source: https://irowiki.org/wiki/Sniper</small>
+
 										  <p>One shot, one kill! There is no better way to describe the Sniper. They specialize in precise and powerful ranged attacks. The Sniper is the master of the Bow. In a Sniper’s hands, the bow is a deadly instrument capable of dealing massive damage and carnage...</p>
-										  <h4 id="mdo">@mdo</h4>
-										  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										  <h4 id="one">one</h4>
-										  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										  <h4 id="two">two</h4>
-										  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										  <h4 id="three">three</h4>
-										  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										</div>
-									
-								    
+
+										  <h4 id="jobchange-1">Job Change Guide</h4>
+										  <h5>Requirements</h5>
+										  	<ol>
+										  		<li>
+										  			<p>Base and Job level must be 40/40 otherwise you cannot proceed with the job change..</p>
+										  		</li>
+										  		<li>
+										  			<div class="media">
+													  <img class="hunter-image mr-3 mb-3" src="assets/images/hunter/adventure-guild-hall.jpg" alt="broken image">
+													  <div class="media-body">
+													  	<p>Go to adventure guild hall at prontera city and talk to Hunter Job Change NPC.</p>
+													  </div> <!-- end of media body -->
+													</div> <!-- end of media -->
+										  		</li>
+
+										  		 <li>
+										  			<div class="media">
+													  <img class="hunter-image mr-3 mb-3" src="assets/images/hunter/image2.png" alt="broken image">
+													  <div class="media-body">
+													  	<p>Talk to the next Hunter NPC. You will need to answer 5 questions in order to proceed to the next quest.Update: talk to another hunter npc in payon , not prontera.. while discovering the map bfore payon, the tree monster was really hurt and aggro also.. </p>
+													  </div> <!-- end of media body -->
+													</div> <!-- end of media -->
+										  		</li>
+
+										  		<li>
+										  			<p> Once you're done killing all the mobs, you will need to talk again to this Hunter NPC and she will ask you to go to Mt. Mjolnir to kill 3 waves of mobs (AGAIN). I would recomend you bait out the mob and kill them one by one.</p>
+										  		</li>
+
+
+										  		<li>
+										  			<p> Talk to this Hunter NPC in Mt. Mjolnir and she will ask you to go to Prontera to talk to another Hunter NPC.</p>
+										  		</li>
+
+
+										  		<li>
+										  			<p> After talking to this Hunter NPC in Prontera, he will warp you to a building (for Job Change).</p>
+										  		</li>
+
+
+										  	</ol>
+						
+
+										  <h4 id="one-1">ADL/Agi Dex Luk</h4>
+										  <small><p>source: https://www.reddit.com/r/RagnarokMobile/comments/9trphm/ragnarok_mobile_archerhuntersniper_comprehensive/</p></small>
+
+
+										  <p>The DPS (damage per second) aka ADL (Agi/Dex/Luk) Build or AD (Agi/Dex). This build primarily focuses on using the normal attack to deal damage. They are great at exploiting elemental weakness via element converters or elemental arrows. They can pierce high defense with crits but it's power is only realized when you get really expensive key equipment. This build has the biggest damage potential out of the three because it's strength is strongly reliant on equipment and as the game progresses, bigger and better items are released. However, those equipment are also progressively going to get more expensive. With great power comes great price tags.</p>
+
+										  <h5>Sample Build stats</h5>
+										  <small><p>Note: This is sample stats build.</p></small>
+
+										  <p>DPS - ADL Lvl 90</p>
+
+										  	<p>STR 0</p>
+
+											<p>AGI 60</p>
+
+											<p>VIT 0</p>
+
+											<p>INT 0</p>
+
+											<p>DEX 99</p>
+
+											<p>LUK 40</p>
+
+										  <h4 id="two-1">Blitzer Build</h4>
+										  <small><p>source: https://www.reddit.com/r/RagnarokMobile/comments/9trphm/ragnarok_mobile_archerhuntersniper_comprehensive/</p></small>
+
+										  <p>The Blitzer build aka AIL (Agi/Int/Luk) focuses on getting the falcon to do the most damage. The falcon will always do neutral damage and ignores defense so it will always deal the exact same damage to enemies regardless of size or element (except for ghost). Blitzer's strength comes from stats and has only one key piece of equipment so they are cheaper to build than ADL types.</p>
+
+										  <h4 id="three-1">Trapper Build</h4>
+										  <small><p>source: https://www.reddit.com/r/RagnarokMobile/comments/9trphm/ragnarok_mobile_archerhuntersniper_comprehensive/</p></small>
+
+										  <p>The Trapper build aka ID (Int/Dex) build on traps to deal their damage. Trappers are the hardest to play because they are very reliant on parties to keep them safe, but they also perform the best when in groups. Trappers are famous for being able to 1 shot Eggyras, but that comes only after becoming a Sniper so beginners should avoid doing a Trapper until then. This is further reinforced by trap damage scaling with base level.</p>
+						
+									</div>   
 
 								  </div> <!-- end of card body -->
 
@@ -186,9 +246,128 @@
 								<h2 id="assasin" class="text-center shadow mt-2 py-3">Assassin/Assassin Cross Class</h2>
 
 								<div class="card mb-5">
+
 								  <img class="card-img-top" src="assets/images/assassin.jpg" alt="Card image cap">
+
 								  <div class="card-body">
-								    <p class="card-text">The Assassin Cross utilizes stealth and confusion in order to land the perfect killing blow. The Assassin Cross has a huge repertoire of lethal arts including ultimate mastery of poison-use, better than the original Assassin. With these new skills, the Assassin Cross now has a wide choice of brutal methods to overcome opponents. All without ever leaving the shadows...</p>
+								  
+								    	<nav class="navbar navbar-expand-lg navbar-light">
+
+										<button class="toggle justify-content-center navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-example3">
+											<span class="navbar-toggler-icon"></span>
+										</button> <!-- angel's burger -->
+						
+									    <nav id="navbar-example3" class="navbar collapse navbar-collapse justify-content-center">
+
+										  <ul class="nav nav-pills nav-guide">
+
+										    <li class="nav-item">
+										      <a class="nav-link" href="#overview-2">Overview</a>
+										    </li>
+
+										    <li class="nav-item">
+										      <a class="nav-link" href="#jobchange-2">Job Change</a>
+										    </li>
+
+										    <li class="nav-item dropdown">
+										      <a class="nav-guide nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Build</a>
+
+										      <div class="dropdown-menu">
+										        <a class="dropdown-item" href="#one-2">ADL Build</a>
+										        <a class="dropdown-item" href="#two-2">Falcon Build</a>
+										        <div role="separator" class="dropdown-divider"></div>
+										        <a class="dropdown-item" href="#three-2">Trapper Build</a>
+										      </div>
+										    </li>
+										  </ul>
+										</nav> <!-- end of collapse -->
+									</nav><!--  end of navbar-expand -->
+
+									<div class="spy-scroll text-left" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+
+										  <h4 id="overview-2">Overview</h4>
+
+										  <small style="font-size: smaller;">Source: https://irowiki.org/wiki/Sniper</small>
+
+										  <p>The Assassin Cross utilizes stealth and confusion in order to land the perfect killing blow. The Assassin Cross has a huge repertoire of lethal arts including ultimate mastery of poison-use, better than the original Assassin. With these new skills, the Assassin Cross now has a wide choice of brutal methods to overcome opponents. All without ever leaving the shadows...</p>
+
+										  <h4 id="jobchange-2">Job Change Guide</h4>
+										  <h5>Requirements</h5>
+										  	<ol>
+										  		<li>
+										  			<p>Base and Job level must be 40/40 otherwise you cannot proceed with the job change..</p>
+										  		</li>
+										  		<li>
+										  			<div class="media">
+													  <img class="hunter-image mr-3 mb-3" src="assets/images/hunter/adventure-guild-hall.jpg" alt="broken image">
+													  <div class="media-body">
+													  	<p>Go to adventure guild hall at prontera city and talk to Hunter Job Change NPC.</p>
+													  </div> <!-- end of media body -->
+													</div> <!-- end of media -->
+										  		</li>
+
+										  		 <li>
+										  			<div class="media">
+													  <img class="hunter-image mr-3 mb-3" src="assets/images/hunter/image2.png" alt="broken image">
+													  <div class="media-body">
+													  	<p>Talk to the next Hunter NPC. You will need to answer 5 questions in order to proceed to the next quest.Update: talk to another hunter npc in payon , not prontera.. while discovering the map bfore payon, the tree monster was really hurt and aggro also.. </p>
+													  </div> <!-- end of media body -->
+													</div> <!-- end of media -->
+										  		</li>
+
+										  		<li>
+										  			<p> Once you're done killing all the mobs, you will need to talk again to this Hunter NPC and she will ask you to go to Mt. Mjolnir to kill 3 waves of mobs (AGAIN). I would recomend you bait out the mob and kill them one by one.</p>
+										  		</li>
+
+
+										  		<li>
+										  			<p> Talk to this Hunter NPC in Mt. Mjolnir and she will ask you to go to Prontera to talk to another Hunter NPC.</p>
+										  		</li>
+
+
+										  		<li>
+										  			<p> After talking to this Hunter NPC in Prontera, he will warp you to a building (for Job Change).</p>
+										  		</li>
+
+
+										  	</ol>
+						
+
+										  <h4 id="one-2">ADL/Agi Dex Luk</h4>
+										  <small><p>source: https://www.reddit.com/r/RagnarokMobile/comments/9trphm/ragnarok_mobile_archerhuntersniper_comprehensive/</p></small>
+
+
+										  <p>The DPS (damage per second) aka ADL (Agi/Dex/Luk) Build or AD (Agi/Dex). This build primarily focuses on using the normal attack to deal damage. They are great at exploiting elemental weakness via element converters or elemental arrows. They can pierce high defense with crits but it's power is only realized when you get really expensive key equipment. This build has the biggest damage potential out of the three because it's strength is strongly reliant on equipment and as the game progresses, bigger and better items are released. However, those equipment are also progressively going to get more expensive. With great power comes great price tags.</p>
+
+										  <h5>Sample Build stats</h5>
+										  <small><p>Note: This is sample stats build.</p></small>
+
+										  <p>DPS - ADL Lvl 90</p>
+
+										  	<p>STR 0</p>
+
+											<p>AGI 60</p>
+
+											<p>VIT 0</p>
+
+											<p>INT 0</p>
+
+											<p>DEX 99</p>
+
+											<p>LUK 40</p>
+
+										  <h4 id="two-2">Blitzer Build</h4>
+										  <small><p>source: https://www.reddit.com/r/RagnarokMobile/comments/9trphm/ragnarok_mobile_archerhuntersniper_comprehensive/</p></small>
+
+										  <p>The Blitzer build aka AIL (Agi/Int/Luk) focuses on getting the falcon to do the most damage. The falcon will always do neutral damage and ignores defense so it will always deal the exact same damage to enemies regardless of size or element (except for ghost). Blitzer's strength comes from stats and has only one key piece of equipment so they are cheaper to build than ADL types.</p>
+
+										  <h4 id="three-2">Trapper Build</h4>
+										  <small><p>source: https://www.reddit.com/r/RagnarokMobile/comments/9trphm/ragnarok_mobile_archerhuntersniper_comprehensive/</p></small>
+
+										  <p>The Trapper build aka ID (Int/Dex) build on traps to deal their damage. Trappers are the hardest to play because they are very reliant on parties to keep them safe, but they also perform the best when in groups. Trappers are famous for being able to 1 shot Eggyras, but that comes only after becoming a Sniper so beginners should avoid doing a Trapper until then. This is further reinforced by trap damage scaling with base level.</p>
+						
+									</div>   
+
 								  </div> <!-- end of card body -->
 								</div> <!-- end of card -->
 								
@@ -202,7 +381,7 @@
 
 								</div> <!-- end of card -->
 
-							</div> <!-- end of col -->	
+							</div> <!-- end of col two-->	
 
 						</div> <!-- end of card -->
 					
@@ -239,28 +418,29 @@
 								
 								</div> <!-- end card -->
 
-						</div> <!-- end col -->
+						</div> <!-- end col three -->
 
 				</div> <!-- END ROW -->
-			
+
+	
+		   
 
 		</section> <!-- end section -->
 	
-		   
+	
 		
-		</div> <!-- end of container-fluid-->
+	</div> <!-- end of container-fluid-->
 
-			<footer class="footer-main">
-		<div class="row">
-			<div class="col-12 col-md-12">
-				<small> images/photo not mine credits to the owner and creators of ragnarok online</small>
+	<footer class="footer-main-2">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<small> images/photo not mine credits to the owner and creators of ragnarok online</small>
+				</div>
+				<div class="col-12 col-md-12">
+					<p>&copy 2018 IGN | SexyChix</p>
+				</div>
 			</div>
-			<div class="col-12 col-md-12">
-				<p>&copy 2018 IGN | SexyChix</p>
-			</div>
-		</div>
 		</footer> <!-- end of footer-main -->
-
 	
 
 

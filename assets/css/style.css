@@ -3,17 +3,21 @@
 	padding:0;
 	box-sizing: border-box;
 
-	font-family:"TrueType", arial;
+/*	font-family:"TrueType", arial;*/
 
 }
 
 /*home page*/
+body, html{
+	overflow-x: hidden;
+}
 .section-main,
 .header-main{
 	background-color: transparent;
 }
 #job-class{
 	border-top: 6px solid #D4AF37;
+	z-index: 0;
 }
 #column2{
 	border-top: 6px solid #40A4F4;	/*40A4F4 cedcff*/
@@ -55,6 +59,11 @@ footer{
     text-align: center;
 
 }
+.footer-main{
+	/*z-index: 500;*/
+	bottom: 0;
+	position: fixed;
+}
 .row{
 
 }
@@ -90,7 +99,7 @@ footer small{
 	color: black;
 }
 .nav-link:hover{
-	color: black;
+	color: #007bff;
 }
 /*.toggle{
 	background-color: black !important;
@@ -99,10 +108,11 @@ footer small{
 	color: white;
 }*/
 
-.home-container{
+.home-container,
+.home-container-1{
 	background-image: url("../images/ragnarok-bg.jpg");
 	background-size: cover;
-	height: 100%;
+	height: 100vh;
 	background-position: center;
 	background-attachment: fixed;
 	/*overflow: hidden;*/
@@ -111,6 +121,10 @@ footer small{
 	width: 50px;
 	height: 50px;
 		/*position: relative;*/
+
+}
+#navbar-example2{
+	background-color: rgba(160,160,160,0.2);
 
 }
 
@@ -139,8 +153,21 @@ footer small{
 .card{
 	background-color: rgba(211,211,211,0.5);
 }
-
-
+#nav-pills .nav-link.active{
+color: blue;
+background-color: transparent;
+}
+.nav-guide .nav-link.active{
+	color: #007bff;
+background-color: transparent;
+}
+.nav-guide a{
+	color: black;
+}
+.media > img{
+	width: 64px;
+	height: 64px;
+}
 /*end of job-build-guide*/
 
 
@@ -150,87 +177,171 @@ footer small{
 
 
 
-@media only screen and (max-width: 1080px) and (max-height: 1400px){
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media query*/
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+/*index page*/
 	.home-container{
-	height: 100vh;
+		background-image: url("../images/ragnarok-bg.jpg");
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+
 	}
-	.poring{
-	margin-top: 40%;
+	.jumbotron .display-4{
+		font-size: 1.5em;
 	}
-}
-
-
-
-
-/*tablet*/
-@media only screen and (max-width: 768px){
-	.kafra{
-		visibility: hidden;
-		display: none;
+	.jumbotron p{
+		font-size: 0.8em;
 	}
-
-.home-container{
-	background-image: url("../images/ragnarok-bg.jpg");
-	height: 100%;
-	background-size: cover;
+	.jumbotron .btn-learn{
+		font-size: 0.8em;
 	}
-}
-
-@media only screen and (max-width: 960px){
-	.kafra{
-		visibility: hidden;
-		display: none;
-	}
-
-.home-container{
-	background-image: url("../images/ragnarok-bg.jpg");
-	height: 100vh;
-	background-size: cover;
-	}
-}
-/*tablet ipad*/
-
-
-/*end of tablet ipad*/
-
-/*desktop*/
-/*@media only screen and (max-height: 1400px){
-
-.home-container{
-	height: 100%;
-	}
-}*/
-/*end of desktop*/
-
-/*phone*/
-@media only screen and (max-width: 450px)  (max-height: 750px){
-	.kafra{
-		visibility: hidden;
-		display: none;
-	}
-	footer p,small{
-	margin-top: 10px;
-	margin-bottom: 10px;
+	footer{
+		bottom: 0;
+		position: fixed;
 	}
 	footer small{
 		font-size: 0.5em;
 	}
-	.jumbotron{
-	height: 500px;
-	width: 100%;
-	background-color: rgba(211,211,211,0.5);
-	margin: 0;
+	footer p{
+		font-size: 0.5em;
 	}
-	.display-4{
-		font-size: 2em;
+	.footer-main-1{
+		position: fixed;
+		bottom: 0;
+
 	}
-	.home-container{
-	background-image: url("../images/ragnarok-bg.jpg");
-	height: 100vh;
-	background-size: cover;
+	.kafra,
+	.poring{
+		visibility: hidden;
+		display: none
 	}
 
+/*end index page*/
+
+/*home page*/
+
+	.home-container-1{
+		background-image: url("../images/ragnarok-bg.jpg");
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+
+/*end home page*/
+	.home-container-2{
+		background-image: url("../images/ragnarok-bg.jpg");
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+	.card{
+		margin-bottom: 100px;
+	}
+	
+ }
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+/*index*/
+	.home-container{
+
+		background-image: url("../images/ragnarok-bg.jpg");
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+
+	}
+/*end of index*/
+
+/*home*/
+	.home-container-1{
+		background-image: url("../images/ragnarok-bg.jpg");
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+/*end of home*/
 }
-/*end of phone*/
-/*tablet ipad*/
+	
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+/*index*/
+	.home-container-2{
+
+		background-image: url("../images/ragnarok-bg.jpg");
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+
+	}
+
+/*end of index*/
+
+/*home*/
+	.home-container-1{
+		
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+
+	}
+	.kafra{
+		height: 350px;
+	}
+	
+/*end of home*/
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.home-container-2{
+
+		background-image: url("../images/ragnarok-bg.jpg");
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+
+	}
+	#job-class{
+		
+	}
+}
