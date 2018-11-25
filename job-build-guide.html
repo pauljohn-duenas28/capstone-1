@@ -26,6 +26,10 @@
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	
+	<audio autoplay loop>
+      <source src="assets/music/prontera.mp3">
+    
+  	</audio>
 
 	<title>Job Build Guide</title>
 
@@ -37,7 +41,7 @@
 
 		<header class="header-main-2 animated fadeInDown">
 		
-			<nav class="navbar navbar-expand-lg">
+			<nav class="navbar navbar-expand-lg navbar-light text-center">
 				<a class="navbar-brand" href="index.html"><img class="icon" src="assets/images/logo.png"><!-- <img class="poring" src="assets/images/ro-poring.gif"> --></a>
 				
 
@@ -45,7 +49,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button> <!-- angel's burger -->
 
-			<div id="navbar-nav" class="collapse navbar-collapse justify-content-center">
+			<div id="navbar-nav" class="collapse navbar-collapse justify-content-center navbar-light text-center">
 				
 				<ul class="navbar-nav ml-auto ">
 
@@ -71,7 +75,7 @@
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="contact.html"> Contact Us</a>
+						<a class="toggle nav-link" href="contact.html"> Contact Us</a>
 					</li>
 
 				</ul>
@@ -89,22 +93,22 @@
 						
 						<div class="col-lg-2">
 
-							<nav id="job-class" class="nav flex-column card sticky-top">
+							<nav id="job-class" class="nav flex-column card sticky-top nav-light navbar-light text-center">
 
 								<h2 class="shadow-lg py-3">Job Classes</h2>
 
-							 	<a class="nav-link" href="#hunter">Sniper</a>
-							 	<a class="nav-link" href="#">Rouge</a>
-							  	<a class="nav-link" href="#knight">Knight</a>
-							  	<a class="nav-link" href="#">Crusader</a>
-							  	<a class="nav-link" href="#">Priest</a>
-							 	<a class="nav-link" href="#">Monk</a>
-							  	<a class="nav-link" href="#assasin">Assasin</a>
-							  	<a class="nav-link" href="#">Blacksmith</a>
-							  	<a class="nav-link" href="#">Alchemist</a>
-							  	<a class="nav-link disabled" href="#">Bard Soon</a>
-							  	<a class="nav-link disabled" href="#">Dancer Soon</a>
-							</nav> <!-- end nav -->
+							 	<a class="toggle nav-link" href="#hunter">Sniper</a>
+							 	<a class="toggle nav-link" href="#">Rouge</a>
+							  	<a class="toggle nav-link" href="#knight">Knight</a>
+							  	<a class="toggle nav-link" href="#">Crusader</a>
+							  	<a class="toggle nav-link" href="#">Priest</a>
+							 	<a class="toggle nav-link" href="#">Monk</a>
+							  	<a class="toggle nav-link" href="#assasin">Assasin</a>
+							  	<a class="toggle nav-link" href="#">Blacksmith</a>
+							  	<a class="toggle nav-link" href="#">Alchemist</a>
+							  	<a class="toggle nav-link disabled" href="#">Bard Soon</a>
+							  	<a class="toggle nav-link disabled" href="#">Dancer Soon</a>
+							</nav> <!-- end job class column -->
 
 						</div> <!-- end of column one -->
 						
@@ -122,6 +126,7 @@
 								  <div class="card-body">
 
 
+								  	<!-- start of hunter class -->
 								  	<nav class="navbar navbar-expand-lg navbar-light">
 
 										<button class="toggle justify-content-center navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-example2">
@@ -130,24 +135,24 @@
 						
 									    <nav id="navbar-example2" class="navbar collapse navbar-collapse justify-content-center">
 
-										  <ul class="nav nav-pills nav-guide">
+										  <ul class="nav nav-pills">
 
 										    <li class="nav-item">
-										      <a class="nav-link" href="#overview-1">Overview</a>
+										      <a class="nav-link link-1" href="#overview-1">Overview</a>
 										    </li>
 
 										    <li class="nav-item">
-										      <a class="nav-link" href="#jobchange-1">Job Change</a>
+										      <a class="nav-link link-1" href="#jobchange-1">Job Change</a>
 										    </li>
 
 										    <li class="nav-item dropdown">
-										      <a class="nav-guide nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Build</a>
+										      <a class="nav-guide nav-link dropdown-toggle link-1" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Build</a>
 
 										      <div class="dropdown-menu">
 										        <a class="dropdown-item" href="#one-1">ADL Build</a>
-										        <a class="dropdown-item" href="#two-2">Falcon Build</a>
+										        <a class="dropdown-item" href="#two-1">Falcon Build</a>
 										        <div role="separator" class="dropdown-divider"></div>
-										        <a class="dropdown-item" href="#three-3">Trapper Build</a>
+										        <a class="dropdown-item" href="#three-1">Trapper Build</a>
 										      </div>
 										    </li>
 										  </ul>
@@ -170,7 +175,37 @@
 										  		</li>
 										  		<li>
 										  			<div class="media">
-													  <img class="hunter-image mr-3 mb-3" src="assets/images/hunter/adventure-guild-hall.jpg" alt="broken image">
+
+											  			<!-- Button trigger modal-1 -->
+											  			<a href="" data-toggle="modal" data-target="#hunter-image-1"><img id="hunter-image" class="mr-3 mb-3" src="assets/images/hunter/adventure-guild-hall.jpg" alt="broken image"></a>
+											  			<!-- end of button trigger modal-1 -->
+
+															<!-- Modal-1 -->
+															<div class="modal fade" id="hunter-image-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+															  <div class="modal-dialog modal-dialog-centered" role="document">
+															    <div class="modal-content">
+															      <div class="modal-header">
+															        <h5 class="modal-title" id="exampleModalCenterTitle">Adventure Guild Hall</h5>
+															        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															          <span aria-hidden="true">&times;</span>
+															        </button>
+															      </div>
+															      <div class="modal-body">
+															        <div class="card" style="width: 100%;">
+																	  <img class="card-img-top" src="assets/images/hunter/adventure-guild-hall.jpg" alt="Card image cap">
+																	  <div class="card-body">
+																	    <p class="card-text">Go to adventure guild hall at prontera city and talk to Hunter Job Change NPC..</p>
+																	  </div>
+																	</div>
+															      </div>
+															      <div class="modal-footer">
+															        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+															       
+															      </div>
+															    </div>
+															  </div>
+															</div> <!-- end of modal-1 -->
+																																				  			
 													  <div class="media-body">
 													  	<p>Go to adventure guild hall at prontera city and talk to Hunter Job Change NPC.</p>
 													  </div> <!-- end of media body -->
@@ -179,7 +214,37 @@
 
 										  		 <li>
 										  			<div class="media">
-													  <img class="hunter-image mr-3 mb-3" src="assets/images/hunter/image2.png" alt="broken image">
+													 
+													  <a href="" data-toggle="modal" data-target="#hunter-image2"><img id="hunter-image" class="mr-3 mb-3" src="assets/images/hunter/image2.png" alt="broken image"></a>
+											  			<!-- end of button trigger modal-1 -->
+
+															<!-- Modal-1 -->
+															<div class="modal fade" id="hunter-image2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+															  <div class="modal-dialog modal-dialog-centered" role="document">
+															    <div class="modal-content">
+															      <div class="modal-header">
+															        <h5 class="modal-title" id="exampleModalCenterTitle">Hunter NPC</h5>
+															        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															          <span aria-hidden="true">&times;</span>
+															        </button>
+															      </div>
+															      <div class="modal-body">
+															        <div class="card" style="width: 100%;">
+																	  <img class="card-img-top" src="assets/images/hunter/image2.png" alt="Card image cap">
+																	  <div class="card-body">
+																	    <p class="card-text">Talk to the next Hunter NPC. You will need to answer 5 questions in order to proceed to the next quest.Update: talk to another hunter npc in payon , not prontera.. while discovering the map bfore payon, the tree monster was really hurt and aggro also...</p>
+																	  </div>
+																	</div>
+															      </div>
+													
+															      <div class="modal-footer">
+															        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+															       
+															      </div>
+															    </div>
+															  </div>
+															</div> <!-- end of modal-1 -->
+
 													  <div class="media-body">
 													  	<p>Talk to the next Hunter NPC. You will need to answer 5 questions in order to proceed to the next quest.Update: talk to another hunter npc in payon , not prontera.. while discovering the map bfore payon, the tree monster was really hurt and aggro also.. </p>
 													  </div> <!-- end of media body -->
@@ -259,24 +324,24 @@
 						
 									    <nav id="navbar-example3" class="navbar collapse navbar-collapse justify-content-center">
 
-										  <ul class="nav nav-pills nav-guide">
+										  <ul class="nav nav-pills nav-guide-2">
 
 										    <li class="nav-item">
-										      <a class="nav-link" href="#overview-2">Overview</a>
+										      <a class="nav-link link-2" href="#overview-2">Overview</a>
 										    </li>
 
 										    <li class="nav-item">
-										      <a class="nav-link" href="#jobchange-2">Job Change</a>
+										      <a class="nav-link link-2" href="#jobchange-2">Job Change</a>
 										    </li>
 
-										    <li class="nav-item dropdown">
-										      <a class="nav-guide nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Build</a>
+										    <li class="nav-item dropdown nav-guide-2">
+										      <a class="nav-guide-2 nav-link dropdown-toggle link-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Build</a>
 
 										      <div class="dropdown-menu">
-										        <a class="dropdown-item" href="#one-2">ADL Build</a>
-										        <a class="dropdown-item" href="#two-2">Falcon Build</a>
-										        <div role="separator" class="dropdown-divider"></div>
-										        <a class="dropdown-item" href="#three-2">Trapper Build</a>
+										        <a class="dropdown-item" href="#one-2">Katar Build</a>
+										        <a class="dropdown-item" href="#two-2">FDagger Build</a>
+										       <!--  <div role="separator" class="dropdown-divider"></div>
+										        <a class="dropdown-item" href="#three-2">Trapper Build</a> -->
 										      </div>
 										    </li>
 										  </ul>
@@ -299,7 +364,7 @@
 										  		</li>
 										  		<li>
 										  			<div class="media">
-													  <img class="hunter-image mr-3 mb-3" src="assets/images/hunter/adventure-guild-hall.jpg" alt="broken image">
+													  <img id="hunter-image-2" class="mr-3 mb-3" src="assets/images/hunter/adventure-guild-hall.jpg" alt="broken image">
 													  <div class="media-body">
 													  	<p>Go to adventure guild hall at prontera city and talk to Hunter Job Change NPC.</p>
 													  </div> <!-- end of media body -->
@@ -308,7 +373,7 @@
 
 										  		 <li>
 										  			<div class="media">
-													  <img class="hunter-image mr-3 mb-3" src="assets/images/hunter/image2.png" alt="broken image">
+													  <img id="hunter-image-2" class="mr-3 mb-3" src="assets/images/hunter/image2.png" alt="broken image">
 													  <div class="media-body">
 													  	<p>Talk to the next Hunter NPC. You will need to answer 5 questions in order to proceed to the next quest.Update: talk to another hunter npc in payon , not prontera.. while discovering the map bfore payon, the tree monster was really hurt and aggro also.. </p>
 													  </div> <!-- end of media body -->
@@ -316,55 +381,53 @@
 										  		</li>
 
 										  		<li>
-										  			<p> Once you're done killing all the mobs, you will need to talk again to this Hunter NPC and she will ask you to go to Mt. Mjolnir to kill 3 waves of mobs (AGAIN). I would recomend you bait out the mob and kill them one by one.</p>
+										  			<p> Have 3 questions to answer.</p>
 										  		</li>
 
 
 										  		<li>
-										  			<p> Talk to this Hunter NPC in Mt. Mjolnir and she will ask you to go to Prontera to talk to another Hunter NPC.</p>
+										  			<p> Talk to next job change npc, aswering 3 questions again..</p>
 										  		</li>
 
 
 										  		<li>
-										  			<p> After talking to this Hunter NPC in Prontera, he will warp you to a building (for Job Change).</p>
+										  			<p> You'll get a quest to kill all porings in the map</p>
+										  		</li>
+
+	  											<li>
+										  			<p> System will help you with sneak skill to get out of the maze</p>
+										  		</li>
+
+												<li>
+										  			<p>  Talk to the job change NPC</p>
+										  		</li>
+
+												<li>
+										  			<p> Yah! You're an Assassin.</p>
 										  		</li>
 
 
 										  	</ol>
 						
 
-										  <h4 id="one-2">ADL/Agi Dex Luk</h4>
+										  <h4 id="one-2">Katar Build</h4>
 										  <small><p>source: https://www.reddit.com/r/RagnarokMobile/comments/9trphm/ragnarok_mobile_archerhuntersniper_comprehensive/</p></small>
 
 
 										  <p>The DPS (damage per second) aka ADL (Agi/Dex/Luk) Build or AD (Agi/Dex). This build primarily focuses on using the normal attack to deal damage. They are great at exploiting elemental weakness via element converters or elemental arrows. They can pierce high defense with crits but it's power is only realized when you get really expensive key equipment. This build has the biggest damage potential out of the three because it's strength is strongly reliant on equipment and as the game progresses, bigger and better items are released. However, those equipment are also progressively going to get more expensive. With great power comes great price tags.</p>
 
-										  <h5>Sample Build stats</h5>
-										  <small><p>Note: This is sample stats build.</p></small>
+										  <!-- <h5>Sample Build stats</h5>
+										  <small><p>Note: This is sample stats build.</p></small> -->
 
-										  <p>DPS - ADL Lvl 90</p>
-
-										  	<p>STR 0</p>
-
-											<p>AGI 60</p>
-
-											<p>VIT 0</p>
-
-											<p>INT 0</p>
-
-											<p>DEX 99</p>
-
-											<p>LUK 40</p>
-
-										  <h4 id="two-2">Blitzer Build</h4>
+										  <h4 id="two-2">Dagger Build</h4>
 										  <small><p>source: https://www.reddit.com/r/RagnarokMobile/comments/9trphm/ragnarok_mobile_archerhuntersniper_comprehensive/</p></small>
 
 										  <p>The Blitzer build aka AIL (Agi/Int/Luk) focuses on getting the falcon to do the most damage. The falcon will always do neutral damage and ignores defense so it will always deal the exact same damage to enemies regardless of size or element (except for ghost). Blitzer's strength comes from stats and has only one key piece of equipment so they are cheaper to build than ADL types.</p>
 
-										  <h4 id="three-2">Trapper Build</h4>
+									<!-- 	  <h4 id="three-2">Trapper Build</h4>
 										  <small><p>source: https://www.reddit.com/r/RagnarokMobile/comments/9trphm/ragnarok_mobile_archerhuntersniper_comprehensive/</p></small>
 
-										  <p>The Trapper build aka ID (Int/Dex) build on traps to deal their damage. Trappers are the hardest to play because they are very reliant on parties to keep them safe, but they also perform the best when in groups. Trappers are famous for being able to 1 shot Eggyras, but that comes only after becoming a Sniper so beginners should avoid doing a Trapper until then. This is further reinforced by trap damage scaling with base level.</p>
+										  <p>The Trapper build aka ID (Int/Dex) build on traps to deal their damage. Trappers are the hardest to play because they are very reliant on parties to keep them safe, but they also perform the best when in groups. Trappers are famous for being able to 1 shot Eggyras, but that comes only after becoming a Sniper so beginners should avoid doing a Trapper until then. This is further reinforced by trap damage scaling with base level.</p> -->
 						
 									</div>   
 
@@ -383,7 +446,7 @@
 
 							</div> <!-- end of col two-->	
 
-						</div> <!-- end of card -->
+						</div> <!-- end of column 2 -->
 					
 						<div class="col-lg-4">
 							<div id="column3" class="card text-center container-fluid">
@@ -413,6 +476,32 @@
 									  	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nStZbz1K95Y" allowfullscreen></iframe>
 									
 									</div>
+									<div class="text-left">
+									<h2 class="mt-3" >Official Website</h2>
+
+									<ul>
+										<li>
+											<a class="nav-link" href="https://www.ragnaroketernallove.com/" target="_blank">Ragnarok Online Mobile Official Website</a>
+										</li>
+									</ul>
+
+									<h2 class="mt-3">Hot Topic</h2>
+
+									<ul>
+										<li>
+											<a class="nav-link" href="https://rierin.com/2017/03/10/adventurer-rank-guide/" target="_blank">Ranked Guide</a>
+										</li>
+										<li>
+											<a class="nav-link" href="https://rierin.com/2017/03/10/adventurer-rank-guide/" target="_blank">Pet Labor</a>
+										</li>
+										<li>
+											<a class="nav-link" href="https://rierin.com/2017/03/10/adventurer-rank-guide/" target="_blank">Cooking Recipe</a>
+										</li>
+										<li>
+											<a class="nav-link" href="https://rierin.com/2017/03/10/adventurer-rank-guide/" target="_blank">Hidden Scenery</a>
+										</li>
+									</ul>
+									</div>
 
 									
 								
@@ -420,7 +509,7 @@
 
 						</div> <!-- end col three -->
 
-				</div> <!-- END ROW -->
+					</div> <!-- END ROW -->
 
 	
 		   
@@ -440,7 +529,7 @@
 					<p>&copy 2018 IGN | SexyChix</p>
 				</div>
 			</div>
-		</footer> <!-- end of footer-main -->
+	</footer> <!-- end of footer-main -->
 	
 
 
