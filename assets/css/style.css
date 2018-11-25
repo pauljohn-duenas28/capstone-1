@@ -22,6 +22,9 @@ body, html{
 	border-top: 6px solid #D4AF37;
 	z-index: 0;
 }
+.index-main{
+	    border-top: 6px solid #D4AF37;
+}
 #column2{
 	border-top: 6px solid #40A4F4;	/*40A4F4 cedcff*/
 }
